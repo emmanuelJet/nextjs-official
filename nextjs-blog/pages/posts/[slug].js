@@ -26,7 +26,12 @@ export default function SinglePostPage({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{`emmanuelJet | ${postData.title}`}</title>
+        <title>{`${postData.title} | emmanuelJet`}</title>
+        <link
+          rel="canonical"
+          href={`https://nextjs-blog-emmanueljet.vercel.app/posts/${postData.slug}`}
+          key="canonical"
+        />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
