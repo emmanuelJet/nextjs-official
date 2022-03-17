@@ -5,3 +5,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
+export function reportWebVitals(metric) {
+  console.log(metric)
+}
